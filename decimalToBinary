@@ -1,0 +1,13 @@
+let decNum = 7;
+let binNum = "";
+while (decNum >= 1) {
+  binNum += decNum % 2;
+  decNum = Math.floor(decNum / 2);
+}
+let binNumRev = "";
+let index = binNum.length - 1;
+while (index >= 0) {
+  binNumRev += binNum[index];
+  index--;
+}
+console.log(binNumRev);
